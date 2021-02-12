@@ -9,13 +9,30 @@
 
     <style>
 
+    header {
+      text-align: center;
+    }
+
     body {
+      background-image: url(laughingEmoji.png);
       font-family: helvetica, sans-serif;
+      width: 400px;
+      margin:0 auto;
+    }
+
+    .formBox {
+      border: 3px solid black;
+      border-radius: 1em;
+      background-color: white;
+      padding: 20px;
+      margin: 0 auto;
       width: 350px;
+      box-shadow: 10px 15px 20px;
+
     }
 
     label {
-      font-weight: bold;  
+      font-weight: bold;
     }
 
     div {
@@ -32,12 +49,18 @@
       color: #5E2612;
       padding: 10px;
       visibility: hidden;
+      border-radius: 10px;
     }
 
     </style>
   </head>
 
+  <header>
+    <h1>The Silly Story Generator</h1>
+  </header>
+
   <body>
+    <div class="formBox">
     <div>
       <label for="customname">Enter custom name:</label>
       <input id="customname" type="text" placeholder="">
@@ -53,6 +76,7 @@
     <p class="story"></p>
     
     <script src="main.js" defer></script>
+  </div>
     
   </body>
 </html>
